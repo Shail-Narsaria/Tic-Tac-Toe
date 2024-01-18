@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(168, 188, 236);
+}
+nav{
+    background-color: rgb(3, 3, 62);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 20px;
+    color: bisque;
+    font-family: 'Black Ops One', cursive;
+}
+nav li button{
+    color: bisque;
+    background-color: rgb(3, 3, 62);
+    margin-left: 1120px;
+    padding: 4px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: bisque;  
+    font-family: 'Black Ops One', cursive; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+
+}
+.gameboard{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    position: relative;
+}
+.box{
+    border: 2px solid rgb(3, 3, 62);
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(142, 172, 243);
+}
+.information{
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 100px;
+    font-size: 3em;
+}
+.winner_img img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bb{
+    border-bottom: none;
+}
+.bt{
+    border-top: none;
+}
+.bl{
+    border-left: none;
+}
+.br{
+    border-right: none;
+}
+#restartbtn{
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    padding: 5px;
+    margin: 35px;
+    cursor: pointer;
+    font-weight: 500;   
+}
+#restartbtn:hover{
+    background-color: antiquewhite;
+}
+.winning_line{
+    background-color: rgb(57, 88, 3);
+    width: 0;
+    transition: width 1s ease-in;
+    height: 8px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+}
+
+
+@media screen and (max-width:1000px){
+    .container{
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .information{
+        margin-top: 62px;
+        font-size: 2em;
+    }
+    
+}
+
+

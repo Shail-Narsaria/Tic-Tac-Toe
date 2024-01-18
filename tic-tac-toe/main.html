@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                Play Tic Tac Toe Now !!!
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="gameboard">
+            <div class="winning_line"></div>
+            <div class="box bt bl"><span class="boxtext"></span></div>
+            <div class="box bt"><span class="boxtext"></span></div>
+            <div class="box bt br"><span class="boxtext"></span></div>
+            <div class="box bl"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br"><span class="boxtext"></span></div>
+            <div class="box bl bb"><span class="boxtext"></span></div>
+            <div class="box bb"><span class="boxtext"></span></div>
+            <div class="box bb br"><span class="boxtext"></span></div>
+        </div>
+        <div class="information">
+            <h2>Start Playing</h2>
+            <div>
+                <span class="info">Turn for X</span>
+                <button id="restartbtn">
+                    <span class="material-symbols-outlined">restart_alt</span>Restart
+                </button>
+            </div>
+            <div class="winner_img">
+                <img src="winning_img.gif" alt="You Won">
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script> 
+
+</body>
+</html>
